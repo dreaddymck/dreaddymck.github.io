@@ -23,6 +23,7 @@
 
 		body {
 			margin: 0;
+			background-color: #212121;
 		}
 
 		svg:not(:root) {
@@ -36,8 +37,7 @@
 			height: 20px
 		}
 
-		.container,
-		.container-left {
+		.container {
 			position: relative;
 			max-width: 600px;
 			margin: 0 auto;
@@ -45,8 +45,7 @@
 		}
 
 		.column,
-		.container,
-		.container-left {
+		.container {
 			width: 100%;
 			box-sizing: border-box
 		}
@@ -59,10 +58,6 @@
 			color: black;
 		}
 
-		.container-left {
-			text-align: left
-		}
-
 		.column {
 			position: center;
 			float: center;
@@ -72,7 +67,9 @@
 			width: 95%;
 			height: 95%;
 		}
-
+		.heading{
+			color: beige;
+		}
 		/* Spacing
 		–––––––––––––––––––––––––––––––––––––––––––––––––– */
 		button,
@@ -134,8 +131,13 @@
 
 		/* Default (this is great for your own brand color!) */
 		.button.button-default {
-			/* color: #ffffff; */
-			background-color: #c0c3cc31;
+			color: #000000;
+			background-color: #ffffff;
+			/* border: 1px solid #8286a37e; */
+		}
+		.button.button-blogger {
+			color: #ffffff;
+			background-color: #ff5500;
 			border: 1px solid #8286a37e;
 		}
 
@@ -297,7 +299,7 @@
 		.button.button-yt {
 			color: #ffffff;
 			background-color: #000000;
-			border: 1px solid #FFFFFF;
+			/* border: 1px solid #FFFFFF; */
 		}
 
 		.button.button-yt:hover,
@@ -342,8 +344,10 @@
 	<div class="container">
 		<div class="row">
 			<div class="column" style="margin-top: 2%">
+
 				<img class="banner dreaddymck_banner_svg" />
-				<h1 role="heading">I AND I GAMING</h1>
+
+				<h1 role="heading" class="heading">I AND I GAMING</h1>
 				<a class="button button-yt" href="https://www.youtube.com/channel/UCsWhFxax59ghIOGYjG_XnOQ"
 					target="_blank" rel="noopener" role="button"><img class="icon youtube_svg" alt="">Youtube</a><br>
 				<a class="button button-odysee"
@@ -355,10 +359,10 @@
 					rel="noopener" role="button"><img class="icon reddit_svg" alt="">Reddit</a><br>
 				<a class="button button-faceb" href="https://www.facebook.com/IandIgaming/" target="_blank"
 					rel="noopener" role="button button-faceb"><img class="icon facebook_svg" alt="">Facebook</a><br>
-				<a class="button button-default" href="https://iandigaming.blogspot.com/" target="_blank" rel="noopener"
+				<a class="button button-blogger" href="https://iandigaming.blogspot.com/" target="_blank" rel="noopener"
 					role="button"><img class="icon blogger_svg" alt="">Blogger</a><br>
 
-				<h1 role="heading">DREADDYMCK</h1>
+				<h1 role="heading" class="heading">DREADDYMCK</h1>
 				<a class="button button-yt" href="https://www.youtube.com/channel/UCTFE4RiW-s5Ai3WJtvgy1sg"
 					target="_blank" rel="noopener" role="button"><img class="icon youtube_svg" alt="">Youtube</a><br>
 				<a class="button button-odysee" href="https://odysee.com/@DreaddyMck:6" target="_blank" rel="noopener"
