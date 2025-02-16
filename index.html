@@ -71,10 +71,10 @@
 		.heading {
 			font-size: 40px;
 			font-weight: 600;
-			background-image: linear-gradient(to left, #553c9a, #b393d3);
+			/* background-image: linear-gradient(to left, #3c429a, #006c97);
 			color: transparent;
 			background-clip: text;
-			-webkit-background-clip: text;
+			-webkit-background-clip: text; */
 		}
 
 		/* Spacing
@@ -140,12 +140,18 @@
 		.button.button-default {
 			color: #000000;
 			background-color: #ffffff;
-			/* border: 1px solid #8286a37e; */
+			border: 1px solid #8286a37e;
+		}
+
+		.button.button-lemmy-world {
+			color: #f8f9fa;
+			background-color: #202020;
+			border: 1px solid #8286a37e;
 		}
 
 		.button.button-blogger {
 			color: #ffffff;
-			background-color: #ff5500;
+			background-color: #f57c00;
 			border: 1px solid #8286a37e;
 		}
 
@@ -156,7 +162,7 @@
 
 		.button.button-direct-app {
 			color: #ffffff;
-			background-color: #00d300;
+			background-color: #ff7b00;
 			border: 1px solid #8286a37e;
 		}
 
@@ -167,8 +173,8 @@
 
 		/* Bluesky */
 		.button.button-bluesky {
-			color: #000000;
-			background-color: #F3F9FF;
+			color: #fff;
+			background-color: #161e27;
 			border: 1px solid #212121;
 		}
 
@@ -237,7 +243,7 @@
 		/* odysee */
 		.button.button-odysee {
 			color: #ffffff;
-			background-color: #ff5500;
+			background-color: #1f1f22;
 			border: 1px solid #7a7878;
 		}
 
@@ -306,7 +312,7 @@
 		/* YouTube */
 		.button.button-yt {
 			color: #ffffff;
-			background-color: #000000;
+			background-color: #292d33;
 			border: 1px solid #c0c0c0;
 		}
 
@@ -335,6 +341,25 @@
 				margin-left: 0
 			}
 		}
+
+		.glow {
+			/* font-size: 80px; */
+			color: #fff;
+			text-align: center;
+			-webkit-animation: glow 1s ease-in-out infinite alternate;
+			-moz-animation: glow 1s ease-in-out infinite alternate;
+			animation: glow 1s ease-in-out infinite alternate;
+		}
+
+		@-webkit-keyframes glow {
+			from {
+				text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e69600, 0 0 40px #e6c400, 0 0 50px #e64900, 0 0 60px #e60f00, 0 0 70px #e60800;
+			}
+
+			to {
+				text-shadow: 0 0 20px #fff, 0 0 30px #ff9d4d, 0 0 40px #ff8e4d, 0 0 50px #ffc14d, 0 0 60px #ffd04d, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+			}
+		}
 	</style>
 	<script>
 		function dmck_linktree_img(elem, svg) {
@@ -357,7 +382,7 @@
 				<a class="button button-direct-app" href="https://direct.app/dreaddymck" target="_blank" rel="noopener"
 					role="button"><img class="icon merch_svg" alt="">Merchandise</a><br>
 
-				<h1 role="heading" class="heading">I AND I GAMING</h1>
+				<h1 role="heading" class="heading glow">I AND I GAMING</h1>
 				<a class="button button-yt" href="https://www.youtube.com/channel/UCsWhFxax59ghIOGYjG_XnOQ"
 					target="_blank" rel="noopener" role="button"><img class="icon youtube_svg" alt="">Youtube</a><br>
 				<a class="button button-odysee"
@@ -372,7 +397,7 @@
 				<a class="button button-blogger" href="https://iandigaming.blogspot.com/" target="_blank" rel="noopener"
 					role="button"><img class="icon blogger_svg" alt="">Blogger</a><br>
 
-				<h1 role="heading" class="heading">DREADDYMCK</h1>
+				<h1 role="heading" class="heading glow">DREADDYMCK</h1>
 				<!-- <a class="button button-yt" href="https://www.youtube.com/channel/UCTFE4RiW-s5Ai3WJtvgy1sg"
 					target="_blank" rel="noopener" role="button"><img class="icon youtube_svg" alt="">Youtube</a><br> -->
 				<!-- <a class="button button-odysee" href="https://odysee.com/@DreaddyMck:6" target="_blank" rel="noopener"
@@ -387,8 +412,8 @@
 					rel="noopener" role="button"><img class="icon reddit_svg" alt="">Reddit</a><br> -->
 				<a class="button button-mastodon" href="https://mastodon.social/@dreaddymck" target="_blank"
 					rel="noopener" role="button"><img class="icon mastodon_svg" alt="">Mastodon</a><br>
-				<a class="button button-default" href="https://lemmy.world/u/DreaddyMck" target="_blank" rel="noopener"
-					role="button"><img class="icon lemmy_world_svg" alt="">Lemmy.World</a><br>
+				<a class="button button-lemmy-world" href="https://lemmy.world/u/DreaddyMck" target="_blank"
+					rel="noopener" role="button"><img class="icon lemmy_world_svg" alt="">Lemmy.World</a><br>
 				<!-- <a class="button button-faceb" href="https://www.facebook.com/Dreaddymck" target="_blank" rel="noopener"
 					role="button "><img class="icon facebook_svg" alt="">Facebook</a><br> -->
 				<!-- <a class="button button-default" href="https://www.minds.com/dreaddy/" target="_blank" rel="noopener"
