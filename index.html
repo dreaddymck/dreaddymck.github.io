@@ -362,75 +362,6 @@
 		}
 	</style>
 	<script>
-		function dmck_linktree_img(elem, svg) {
-			var element = document.getElementsByClassName(elem);
-			if (element) {
-				for (var i = 0; i < element.length; i++) {
-					element[i].src = "data:image/svg+xml;base64," + btoa(svg);
-				}
-			}
-		}
-		document.addEventListener('DOMContentLoaded', function () {
-			dmck_linktree_svg_object.forEach((key, index) => { dmck_linktree_img(key.id, key.svg) });
-		}, false);
-	</script>
-	<div class="dmck-container">
-		<div class="row">
-			<div class="column" style="margin-top: 2%">
-
-				<img class="banner dreaddymck_banner_svg" />
-
-				<h1 role="heading" class="heading glow">I AND I GAMING</h1>
-				<a class="button button-yt" href="https://www.youtube.com/channel/UCsWhFxax59ghIOGYjG_XnOQ"
-					target="_blank" rel="noopener" role="button"><img class="icon youtube_svg" alt="">Youtube</a><br>
-				<a class="button button-odysee"
-					href="https://odysee.com/@IANDIGaming:1?r=7RDFu7rPf6nB77bFmjAwJzdECkmgBDvo" target="_blank"
-					rel="noopener" role="button"><img class="icon odysee_svg" alt="">Odysee</a><br>
-				<a class="button button-twitch" href="https://www.twitch.tv/iandigaming" target="_blank" rel="noopener"
-					role="button"><img class="icon twitch_svg" alt="">Twitch</a><br>
-				<!-- <a class="button button-reddit" href="https://www.reddit.com/user/iandigaming/" target="_blank"
-					rel="noopener" role="button"><img class="icon reddit_svg" alt="">Reddit</a><br> -->
-				<!-- <a class="button button-faceb" href="https://www.facebook.com/IandIgaming/" target="_blank"
-					rel="noopener" role="button button-faceb"><img class="icon facebook_svg" alt="">Facebook</a><br> -->
-				<a class="button button-blogger" href="https://iandigaming.blogspot.com/" target="_blank" rel="noopener"
-					role="button"><img class="icon blogger_svg" alt="">Blogger</a><br>
-
-				<h1 role="heading" class="heading glow">DREADDYMCK</h1>
-				<!-- <a class="button button-yt" href="https://www.youtube.com/channel/UCTFE4RiW-s5Ai3WJtvgy1sg"
-					target="_blank" rel="noopener" role="button"><img class="icon youtube_svg" alt="">Youtube</a><br> -->
-				<!-- <a class="button button-odysee" href="https://odysee.com/@DreaddyMck:6" target="_blank" rel="noopener"
-					role="button"><img class="icon odysee_svg" alt="">Odysee</a><br> -->
-				<!-- <a class="button button-twitch" href="https://www.twitch.tv/dreaddymck" target="_blank" rel="noopener"
-					role="button"><img class="icon twitch_svg" alt="">Twitch</a><br> -->
-				<a class="button button-bluesky" href="https://bsky.app/profile/dreaddymck.bsky.social" target="_blank"
-					rel="noopener" role="button"><img class="icon bluesky_svg" alt="">bsky</a><br>
-				<!-- <a class="button button-twit" href="https://twitter.com/dreaddymck" target="_blank" rel="noopener"
-					role="button"><img class="icon twitter_svg" alt="">Twitler</a><br> -->
-				<!-- <a class="button button-reddit" href="https://www.reddit.com/user/dreaddymck/" target="_blank"
-					rel="noopener" role="button"><img class="icon reddit_svg" alt="">Reddit</a><br> -->
-				<a class="button button-mastodon" href="https://mastodon.social/@dreaddymck" target="_blank"
-					rel="noopener" role="button"><img class="icon mastodon_svg" alt="">Mastodon</a><br>
-				<a class="button button-lemmy-world" href="https://lemmy.world/u/DreaddyMck" target="_blank"
-					rel="noopener" role="button"><img class="icon lemmy_world_svg" alt="">Lemmy.World</a><br>
-				<!-- <a class="button button-faceb" href="https://www.facebook.com/Dreaddymck" target="_blank" rel="noopener"
-					role="button "><img class="icon facebook_svg" alt="">Facebook</a><br> -->
-				<!-- <a class="button button-default" href="https://www.minds.com/dreaddy/" target="_blank" rel="noopener"
-					role="button"><img class="icon minds_svg" alt="">Minds</a><br> -->
-				<a class="button button-soundcloud" href="https://soundcloud.com/dreaddymck" target="_blank"
-					rel="noopener" role="button"><img class="icon soundcloud_svg" alt="">Soundcloud</a><br>
-				<!-- <a class="button button-github" href="https://github.com/dreaddymck" target="_blank" rel="noopener"
-					role="button"><img class="icon github_svg" alt="">Github</a><br> -->
-				<!-- <a class="button button-default" href="https://dreaddymck.blogspot.com/" target="_blank" rel="noopener"
-					role="button"><img class="icon blogger_svg" alt="">Blogger</a><br> -->
-				<!-- <a class="button button-ko-fi" href="https://ko-fi.com/dreaddymck" target="_blank" rel="noopener"
-					role="button"><img class="icon kofi_svg" alt="">Ko-Fi</a><br>
-				<a class="button button-default" href="https://www.patreon.com/dreaddymck" target="_blank"
-					rel="noopener" role="button"><img class="icon patreon_svg" alt="">Patreon</a><br> -->
-
-			</div>
-		</div>
-	</div>
-	<script>
 		const dmck_linktree_svg_object =
 			[
 				{
@@ -622,6 +553,76 @@
 </svg>`
 				}
 			];
+
+		function dmck_linktree_img(elem, svg) {
+			var element = document.getElementsByClassName(elem);
+			if (element) {
+				for (var i = 0; i < element.length; i++) {
+					element[i].src = "data:image/svg+xml;base64," + btoa(svg);
+				}
+			}
+		}
+		document.addEventListener('DOMContentLoaded', function () {
+			dmck_linktree_svg_object.forEach((key, index) => { dmck_linktree_img(key.id, key.svg) });
+		}, false);
+	</script>
+	<div class="dmck-container">
+		<div class="row">
+			<div class="column" style="margin-top: 2%">
+
+				<img class="banner dreaddymck_banner_svg" />
+
+				<h1 role="heading" class="heading glow">I AND I GAMING</h1>
+				<a class="button button-yt" href="https://www.youtube.com/channel/UCsWhFxax59ghIOGYjG_XnOQ"
+					target="_blank" rel="noopener" role="button"><img class="icon youtube_svg" alt="">Youtube</a><br>
+				<a class="button button-odysee"
+					href="https://odysee.com/@IANDIGaming:1?r=7RDFu7rPf6nB77bFmjAwJzdECkmgBDvo" target="_blank"
+					rel="noopener" role="button"><img class="icon odysee_svg" alt="">Odysee</a><br>
+				<a class="button button-twitch" href="https://www.twitch.tv/iandigaming" target="_blank" rel="noopener"
+					role="button"><img class="icon twitch_svg" alt="">Twitch</a><br>
+				<!-- <a class="button button-reddit" href="https://www.reddit.com/user/iandigaming/" target="_blank"
+					rel="noopener" role="button"><img class="icon reddit_svg" alt="">Reddit</a><br> -->
+				<!-- <a class="button button-faceb" href="https://www.facebook.com/IandIgaming/" target="_blank"
+					rel="noopener" role="button button-faceb"><img class="icon facebook_svg" alt="">Facebook</a><br> -->
+				<a class="button button-blogger" href="https://iandigaming.blogspot.com/" target="_blank" rel="noopener"
+					role="button"><img class="icon blogger_svg" alt="">Blogger</a><br>
+
+				<h1 role="heading" class="heading glow">DREADDYMCK</h1>
+				<!-- <a class="button button-yt" href="https://www.youtube.com/channel/UCTFE4RiW-s5Ai3WJtvgy1sg"
+					target="_blank" rel="noopener" role="button"><img class="icon youtube_svg" alt="">Youtube</a><br> -->
+				<!-- <a class="button button-odysee" href="https://odysee.com/@DreaddyMck:6" target="_blank" rel="noopener"
+					role="button"><img class="icon odysee_svg" alt="">Odysee</a><br> -->
+				<!-- <a class="button button-twitch" href="https://www.twitch.tv/dreaddymck" target="_blank" rel="noopener"
+					role="button"><img class="icon twitch_svg" alt="">Twitch</a><br> -->
+				<a class="button button-bluesky" href="https://bsky.app/profile/dreaddymck.bsky.social" target="_blank"
+					rel="noopener" role="button"><img class="icon bluesky_svg" alt="">bsky</a><br>
+				<!-- <a class="button button-twit" href="https://twitter.com/dreaddymck" target="_blank" rel="noopener"
+					role="button"><img class="icon twitter_svg" alt="">Twitler</a><br> -->
+				<!-- <a class="button button-reddit" href="https://www.reddit.com/user/dreaddymck/" target="_blank"
+					rel="noopener" role="button"><img class="icon reddit_svg" alt="">Reddit</a><br> -->
+				<a class="button button-mastodon" href="https://mastodon.social/@dreaddymck" target="_blank"
+					rel="noopener" role="button"><img class="icon mastodon_svg" alt="">Mastodon</a><br>
+				<a class="button button-lemmy-world" href="https://lemmy.world/u/DreaddyMck" target="_blank"
+					rel="noopener" role="button"><img class="icon lemmy_world_svg" alt="">Lemmy.World</a><br>
+				<!-- <a class="button button-faceb" href="https://www.facebook.com/Dreaddymck" target="_blank" rel="noopener"
+					role="button "><img class="icon facebook_svg" alt="">Facebook</a><br> -->
+				<!-- <a class="button button-default" href="https://www.minds.com/dreaddy/" target="_blank" rel="noopener"
+					role="button"><img class="icon minds_svg" alt="">Minds</a><br> -->
+				<a class="button button-soundcloud" href="https://soundcloud.com/dreaddymck" target="_blank"
+					rel="noopener" role="button"><img class="icon soundcloud_svg" alt="">Soundcloud</a><br>
+				<!-- <a class="button button-github" href="https://github.com/dreaddymck" target="_blank" rel="noopener"
+					role="button"><img class="icon github_svg" alt="">Github</a><br> -->
+				<!-- <a class="button button-default" href="https://dreaddymck.blogspot.com/" target="_blank" rel="noopener"
+					role="button"><img class="icon blogger_svg" alt="">Blogger</a><br> -->
+				<!-- <a class="button button-ko-fi" href="https://ko-fi.com/dreaddymck" target="_blank" rel="noopener"
+					role="button"><img class="icon kofi_svg" alt="">Ko-Fi</a><br>
+				<a class="button button-default" href="https://www.patreon.com/dreaddymck" target="_blank"
+					rel="noopener" role="button"><img class="icon patreon_svg" alt="">Patreon</a><br> -->
+
+			</div>
+		</div>
+	</div>
+	<script>
 
 	</script>
 
