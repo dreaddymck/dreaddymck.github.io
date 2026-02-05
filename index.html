@@ -562,9 +562,11 @@
 				}
 			}
 		}
-		document.addEventListener('DOMContentLoaded', function () {
-			dmck_linktree_svg_object.forEach((key, index) => { dmck_linktree_img(key.id, key.svg) });
-		}, false);
+		dmck_linktree_svg_object.forEach((key, index) => { dmck_linktree_img(key.id, key.svg) });
+
+		// document.addEventListener('DOMContentLoaded', function () {
+		// 	dmck_linktree_svg_object.forEach((key, index) => { dmck_linktree_img(key.id, key.svg) });
+		// }, false);
 	</script>
 	<div class="dmck-container">
 		<div class="row">
@@ -622,10 +624,6 @@
 			</div>
 		</div>
 	</div>
-	<script>
-
-	</script>
-
 </body>
 
 </html>
